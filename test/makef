@@ -1,0 +1,16 @@
+app: main.o add_beg.o add_end.o add_sort.o delete.o display.o
+	gcc add_beg.o add_end.o add_sort.o delete.o main.o display.o -o app
+main.o: main.c
+	gcc main.c -c
+add_beg.o: add_beg.c
+	gcc add_beg.c -c
+add_end.o: add_end.c
+	gcc add_end.c -c
+add_sort.o: add_sort.c
+	gcc add_sort.c -c
+delete.o: delete.c
+	gcc delete.c -c
+display.o: display.c
+	gcc display.c -c
+clear: main.o add_beg.o add_end.o add_sort.o delete.o display.o
+	rm add_beg.o add_end.o add_sort.o delete.o main.o display.o app

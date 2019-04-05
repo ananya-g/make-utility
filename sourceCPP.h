@@ -1,0 +1,10 @@
+#include<iostream>
+#include<fstream>
+#include<cstring>
+#include<cstdio>
+#include<cwchar>
+#include<fstream>
+#include<sys/stat.h>
+#include<cstdlib>
+#include<unistd.h>
+#include<signal.h>
